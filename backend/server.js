@@ -13,17 +13,20 @@ const app = express();
 app.use(helmet());
 
 const corsOptions = {
-  origin: function (origin, callback) {
+  origin: (origin, callback) => {
     const allowedOrigins = [
       'http://localhost:5174',
       'https://vajrateja-rice.vercel.app'
     ];
 
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
+    if (!origin) return callback(null, true);
+
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
     }
+
+    console.log("Blocked by CORS:", origin);
+    return callback(null, false);
   },
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'x-admin-key'],
