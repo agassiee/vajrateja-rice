@@ -14,7 +14,10 @@ app.use(helmet());
 
 // CORS Config
 const corsOptions = {
-  origin: process.env.CLIENT_URL || 'http://localhost:5174', // Default to local for dev
+  origin: [
+    'http://localhost:5174',
+    'https://vajrateja-rice.vercel.app'
+  ],
   methods: ['GET', 'POST', 'PUT', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'x-admin-key'],
   credentials: true
