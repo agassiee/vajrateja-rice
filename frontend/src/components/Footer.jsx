@@ -30,7 +30,7 @@ const Footer = () => {
               <Phone size={20} style={{ color: 'var(--gold)' }} />
               <div>
                 <strong>Customer Care:</strong><br/>
-                765 0999 299
+                +91 97058 08532
               </div>
             </div>
 
@@ -46,7 +46,7 @@ const Footer = () => {
               <Mail size={20} style={{ color: 'var(--gold)' }} />
               <div>
                 <strong>Email:</strong><br/>
-                <a href="mailto:enquiry@vajratejarice.com" style={{ color: '#e0e0e0', textDecoration: 'none' }}>enquiry@vajratejarice.com</a>
+                <a href="mailto:Lakshmivajrateja@gmail.com" style={{ color: '#e0e0e0', textDecoration: 'none' }}>Lakshmivajrateja@gmail.com</a>
               </div>
             </div>
           </div>

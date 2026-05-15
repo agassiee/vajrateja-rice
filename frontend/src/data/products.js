@@ -12,7 +12,7 @@ export const products = [
     id: 'p2',
     name: 'HMT Rice',
     category: 'Regular',
-    price: 1300,
+    price: 1600,
     weight: 26,
     image: '/images/hmt.jpg.jpeg',
     description: 'High-yield, fine grain rice suitable for various dishes.'
@@ -57,7 +57,7 @@ export const products = [
     id: 'p7',
     name: 'HMT Jeera Rice',
     category: 'Regular',
-    price: 1300,
+    price: 1600,
     weight: 26,
     image: '/images/jeera.jpg.jpeg',
     description: 'High quality HMT Jeera rice, fine and aromatic.'
